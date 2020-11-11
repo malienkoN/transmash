@@ -1,2 +1,7 @@
-@import "colors.scss";
-@import "general.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'fonts.scss';
+@import 'colors.scss';
+@import 'general.scss';
+@import 'blocks/navbar.scss';
+@import 'blocks/intro.scss';
