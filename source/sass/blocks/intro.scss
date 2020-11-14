@@ -1,6 +1,120 @@
 .intro {
-  padding-top: 115px;
   min-height: 100vh;
   background: url('../img/intro-bg.jpg') no-repeat center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  &__title {
+    padding-left: 50px;
+    margin-bottom: 15px;
+    position: relative;
+
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: $white;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 21px;
+      height: 156px;
+      background-color: $yellow-main;
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__arrow {
+    padding-bottom: 25px;
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro {
+    min-height: auto;
+    height: 750px;
+
+    &__title {
+      padding-left: 35px;
+
+      font-size: 60px;
+
+      &::before {
+        width: 15px;
+        height: 135px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__arrow-icon {
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    &__title {
+      padding-left: 30px;
+
+      font-size: 50px;
+
+      &::before {
+        width: 12px;
+        height: 120px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    &__title {
+      margin-bottom: 30px;
+      padding-left: 20px;
+
+      font-size: 40px;
+
+      &::before {
+        width: 9px;
+        height: 100px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
 }

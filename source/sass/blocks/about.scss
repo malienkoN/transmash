@@ -1,0 +1,41 @@
+.about {
+  margin-top: 200px;
+  margin-bottom: 125px;
+
+  &__title {
+    margin-bottom: 37px;
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+  }
+
+  &__col-first {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title-stat {
+    margin-bottom: 11px;
+  }
+
+  &__text-stat {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    margin-top: 100px;
+    margin-bottom: 70px;
+
+    &__col-first {
+      margin-bottom: 50px;
+    }
+  }
+}

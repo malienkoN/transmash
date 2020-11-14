@@ -1,0 +1,40 @@
+.card {
+  border: none;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, .16);
+
+  &-body {
+    padding-bottom: 2.188rem;
+  }
+
+  &-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.1875;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &-text {
+    margin-bottom: 17px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23;
+    color: $black;
+  }
+
+  &-link {
+    font-size: 17px;
+    line-height: 1.17;
+    color: $yellow-main;
+    font-weight: 400;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+    &:hover,
+    &:focus {
+      color: $yellow-main;
+    }
+  }
+}

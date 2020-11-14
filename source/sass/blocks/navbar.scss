@@ -58,6 +58,11 @@
     background: #f8f9fa;
   }
 
+  .navbar-logo {
+    width: 88px;
+    height: 84px;
+  }
+
   .bg-light {
     background-color: $light!important;
   }
@@ -77,5 +82,12 @@
     &:hover {
       fill: rgba(0,0,0,.7);;
     }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    width: 85px;
+    height: 81px;
   }
 }
