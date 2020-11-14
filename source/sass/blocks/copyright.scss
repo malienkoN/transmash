@@ -1,0 +1,26 @@
+.copyright {
+  padding-bottom: 5px;
+  background-color: #1b1b1b;
+
+  &__text {
+    color: #919191;
+  }
+
+  p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.27;
+    font-weight: 400;
+  }
+
+  &__feature {
+    color: $white;
+    font-weight: 900;
+
+    span {
+      font-size: 16px;
+      line-height: 1.1875;
+      color: $yellow-main;
+    }
+  }
+}
