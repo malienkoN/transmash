@@ -1,0 +1,50 @@
+.entry {
+  min-height: 318px;
+  background: url('../img/entry-bg.jpg') no-repeat center;
+  background-size: cover;
+
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    margin-bottom: 13px;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__breadcrumb {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__breadcrumb-item+&__breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 8px;
+    color: $white;
+    content: '>';
+  }
+
+  &__breadcrumb-item+&__breadcrumb-item {
+    padding-left: 8px;
+  }
+
+  &__breadcrumb-item {
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+
+  a {
+    color: inherit;
+  }
+}

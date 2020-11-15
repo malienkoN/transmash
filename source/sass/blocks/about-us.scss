@@ -1,0 +1,44 @@
+.about-us {
+  padding-top: 89px;
+  margin-bottom: 141px;
+
+  &__title {
+    margin-bottom: 29px;
+
+    font-size: 22px;
+    line-height: 1.22;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    height: 371px;
+    overflow: auto;
+
+    div {
+      padding: 10px 10px 0 0;
+    }
+  }
+
+  &__text::-webkit-scrollbar {
+    width: 9px;
+    background-color: #f4f4f4;
+  }
+
+  &__text::-webkit-scrollbar-thumb {
+    background-color: $yellow-main;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    &__img {
+      margin: 0 auto;
+    }
+
+    &__text-wrap {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -6,6 +6,12 @@ body {
   color: $black;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .heading {
   font-size: 35px;
   line-height: 1.2;
