@@ -1,0 +1,35 @@
+.gallery {
+  margin-top: 79px;
+  margin-bottom: 88px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 37px;
+    row-gap: 37px;
+  }
+
+  img {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    &__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
