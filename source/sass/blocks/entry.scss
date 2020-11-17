@@ -49,3 +49,9 @@
     color: inherit;
   }
 }
+
+@media (max-width: 576px) {
+  .entry__title--m {
+    font-size: 20px;
+  }
+}
