@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   padding-top: 35px;
   background-color: #1b1b1b;
 
@@ -36,12 +36,20 @@
   &__col-second {
     li {
       margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__col-third {
     li {
       margin-bottom: 23px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
