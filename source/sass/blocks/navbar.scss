@@ -34,8 +34,11 @@
   }
 
   .nav-link-phone {
-    padding-right: 0!important;
+    margin-left: 1rem;
+    padding: 0!important;
     border: none;
+    background-color: transparent;
+    outline: none;
 
     &:hover {
       border: none;
@@ -81,6 +84,12 @@
 
     &:hover {
       fill: rgba(0,0,0,.7);;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link-phone {
+      margin-left: 0;
     }
   }
 }

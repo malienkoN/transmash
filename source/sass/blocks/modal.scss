@@ -1,0 +1,33 @@
+.modal {
+  &-header {
+    padding: 15px;
+    align-items: center;
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: $yellow-main;
+  }
+
+  &-body {
+    padding: 32px 35px 35px 33px;
+  }
+
+  &-title {
+    font-size: 10px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $black;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal {
+    &-header {
+      padding: 1rem;
+    }
+
+    &-body {
+      padding: 1rem;
+    }
+  }
+}

@@ -1,6 +1,11 @@
 .form {
   padding: 31px 18px 21px 32px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, .16);
+
+  &--modal {
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
 .form__contacts {
@@ -9,6 +14,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 13px;
+
+  &--modal {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
 }
 
 .form__input {
